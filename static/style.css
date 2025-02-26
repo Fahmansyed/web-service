@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(
+    45deg,
+    rgba(71, 54, 255, 0.981),
+    rgb(134, 250, 250)
+  );
+}
+
+#loginPage,
+#chatPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+#loginPage h2 {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+#chatPage h1{
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+
+#username {
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+#joinChat {
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.1rem;
+}
+
+#joinChat:hover {
+  background-color: rgba(197, 104, 255, 0.711);
+  color: white;
+}
+
+#chatbox {
+  width: 90%;
+  max-width: 600px;
+  height: 70vh;
+  background: url(/static/assets/premium_photo-1670595337767-1af7.jpg) center
+    no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  padding: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+#startButton {
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.1rem;
+}
+
+#startButton:hover {
+  background-color: rgba(197, 104, 255, 0.711);
+  color: white;
+}
+
+/* Message Wrapper */
+.message-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 75%;
+  margin-bottom: 5px;
+}
+
+/* Username Styling */
+.message-username {
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0 2px;
+}
+
+/* Messages */
+.message {
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-shadow: 1px 1px 1px gray;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+/* My messages (Right Side) */
+.my-message-wrapper {
+  align-self: flex-end;
+  text-align: right;
+}
+
+.my-message {
+  background-color: rgb(216, 252, 210);
+  align-self: flex-end;
+}
+
+/* Other users' messages (Left Side) */
+.other-message-wrapper {
+  align-self: flex-start;
+  text-align: left;
+}
+
+.other-message {
+  background-color: white;
+  align-self: flex-start;
+}

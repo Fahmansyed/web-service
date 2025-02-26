@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Speech Chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div id="loginPage">
+        <h2>Enter Your Name</h2>
+        <input type="text" id="username" placeholder="Enter your name">
+        <button id="joinChat">Join Chat</button>
+    </div>
+
+    <div id="chatPage" style="display: none;">
+        <h1>Real-Time Speech Chat</h1>
+        <div id="chatbox"></div>
+        <button id="startButton">Start Listening</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>
