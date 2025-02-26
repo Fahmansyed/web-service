@@ -12,8 +12,11 @@ let isListening = false; // Track if recognition should keep running
 let userColors = {}; // Store colors for each user
 
 const fixedColors = [
-    "#E57373", "#81C784", "#64B5F6", "#FFD54F",
-    "#BA68C8", "#4DB6AC", "#F06292", "#7986CB"
+    "#8A2BE2", // Blue Violet  
+    "#337BFF", // Bright Blue  
+    "#FF5733", // Bright Red-Orange  
+    "#32CD32", // Lime Green (Bright & Fresh)  
+    "#FFD700"  // Gold (Strong contrast)  
 ];
 
 // Assign a fixed color to each username
